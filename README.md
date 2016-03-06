@@ -5,7 +5,7 @@ Creates, displays, and exports coordinate waypoint flight plans for drone autopi
  * Double Left-Click: Create a waypoint, <br>
  * Right-Click: Remove a waypoint, <br>
  * Left-Click: Select a waypoint, <br>
- * Select point -> Click camera: Rotate view, <br>
+ * Select point → Click camera in infobox: Rotate view, <br>
  * Toolbar Fields: Change the selected waypoint, <br>
  * Export: Export the waypoints to a file (not currently formatted for Arudpilot Missions)
 
