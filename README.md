@@ -13,5 +13,5 @@ Try it out at [bxvcodes.club/FlightTool](bxvcodes.club/FlightTool).
 Install Cesium and Node.js from [Cesium's Site](http://cesiumjs.org/tutorials/cesium-up-and-running/) to run locally.
 
 
-MIT License
+<b>MIT License</b>
 
