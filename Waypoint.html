@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Bronxville Flight Tool - Copyright 2016 Charles Vorbach. Uses Cesium to create, visualize, and export custom GPS Waypoint Flight Plans based on QGC WPL 110 format-->
+
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+  <title>Flight Tool - Bronxville Programming</title>
+
+  <!--Import Cesium-->
+  <script src="../../Build/Cesium/Cesium.js"></script>
+
+  <!--Style-->
+  <link rel="stylesheet" type="text/css" href="Waypoint.css">
+</head>
+
+<body>
+
+  <!--Cesium Container and Flight Tool Code-->
+  <div id="cesiumContainer"></div>
+    <script src="Waypoint.js"></script>
+
+  <!--Container for toolbar-->
+  <div id="waypointControls">
+
+    <!--Use Tables to organize toolbar-->
+    <table align="center">
+      
+      <!--Title-->
+      <td width="20%">
+        <span id="title">Bronxville Flight Tool &copy 2016</span>
+      </td>
+      
+      <!--Toolbar Tools-->
+      <td>
+        <form>
+          <table>
+
+            <!--Toolbar Fields-->
+            <div id="waypointData" data-point-number="">
+
+             <td>Waypoint:  <input type="number" min="1" max="1"  id="WaypointNumber" onchange="moveWaypoint()">    </td>
+             <td>Command:   <input type="text" size="9"           id="Command"        onchange="updateWaypoints()"> </td>
+             <td>Latitude:  <input type="text" size="9"           id="Latitude"       onchange="updateWaypoints()"> </td>
+             <td>Longitude: <input type="text" size="9"           id="Longitude"      onchange="updateWaypoints()"> </td>
+             <td>Altitude:  <input type="text" size="9"           id="Altitude"       onchange="updateWaypoints()"> </td>
+             <td>Raduis:    <input type="text" size="9"           id="Radius"         onchange="updateWaypoints()"> </td>
+           </div>
+
+
+         </table>
+       </form>
+      </td>
+
+      <!--Button to Export the Flight Plan-->
+      <td>
+        <button onClick="exportList()">Export Flight Plan</button>
+      </td>
+
+     <!--Button to Download the Flight Plan-->
+     <td>
+       <a id="download" download="FlightPlan.waypoints" disabled="false" href="">
+
+        </a>
+     </td>
+
+    </table>
+  </div>
+  
+</body>
+</html>
