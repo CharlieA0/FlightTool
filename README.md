@@ -3,7 +3,6 @@ Creates, displays, and exports coordinate waypoint flight plans for drone autopi
 
 Try it out at [bxvcodes.club/FlightTool](bxvcodes.club/FlightTool).
 
-
 ###Controls: <br>
  * Double Left-Click: Create a waypoint, <br>
  * Right-Click: Remove a waypoint, <br>
@@ -13,4 +12,6 @@ Try it out at [bxvcodes.club/FlightTool](bxvcodes.club/FlightTool).
 
 Install Cesium and Node.js from [Cesium's Site](http://cesiumjs.org/tutorials/cesium-up-and-running/) to run locally.
 
+
+MIT License
 
