@@ -1,8 +1,6 @@
 # FlightTool
 Creates, displays, and exports coordinate waypoint flight plans for drone autopilots. Powered by Cesium Engine.
 
-Try it out at [bxvcodes.club/FlightTool](bxvcodes.club/FlightTool).
-
 ###Controls: <br>
  * Double Left-Click: Create a waypoint, <br>
  * Right-Click: Remove a waypoint, <br>
