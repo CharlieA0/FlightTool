@@ -5,6 +5,7 @@
      * The output format is not currently the same as Ardupilot's .waypoint files, but modifying getFlightPlan() easily could make it.
      *
      * Written by Charlie Vorbach 
+     * MIT License
      * 
      * Bewarned, this is an uncommented, nightmare-workaround kludge. Proceed at your own risk.
      *  -----Strike that------ This is now extensively commented. While it may still contain a few 'quirks' it shouldn't be too hard to follow.
